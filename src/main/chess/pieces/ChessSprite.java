@@ -2,7 +2,7 @@ package chess.pieces;
 
 import javax.swing.*;
 
-public abstract class ChessSprite {
+public class ChessSprite {
     protected int boardX;
     protected int boardY;
     private boolean highlighted = false;
