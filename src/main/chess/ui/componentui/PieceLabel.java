@@ -9,6 +9,7 @@ public class PieceLabel extends JLabel {
 
     public PieceLabel(ChessSprite sprite){
         this.sprite = sprite;
+        updateIcon();
     }
 
     public ChessSprite getSprite(){ return sprite; }

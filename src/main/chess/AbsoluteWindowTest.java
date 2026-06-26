@@ -13,7 +13,7 @@ public class AbsoluteWindowTest extends JFrame {
             setSize(new Dimension(8*60, 8*60));
             ChessSprite testSprite = new ChessSprite("resources/Chess_pdt60.png", "resources/Chess_pat60.png", 0, 0);
             PieceLabel testLabel = new PieceLabel(testSprite);
-            testLabel.setBounds(10, 10, 60, 60);
+            testLabel.setBounds(20, 120, 60, 60);
             add(testLabel);
             testSprite = new ChessSprite("resources/Chess_plt60.png", "resources/Chess_pat60.png", 0, 0);
             testLabel = new PieceLabel(testSprite);

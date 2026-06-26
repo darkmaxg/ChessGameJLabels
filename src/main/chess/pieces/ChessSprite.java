@@ -6,26 +6,29 @@ public class ChessSprite {
     protected int boardX;
     protected int boardY;
     private boolean highlighted = false;
-    private ImageIcon normalIcon = null;
-    private ImageIcon highlightedIcon = null;
+    private final ImageIcon normalIcon;
+    private final ImageIcon highlightedIcon;
 
     enum Color {WHITE, BLACK};
-
-    String imagefile;
-    String highlightedImageFile;
 
     public ChessSprite(String imagefile, String highlightedImageFile, int boardX, int boardY){
         this.boardX = boardX;
         this.boardY = boardY;
-        this.imagefile = imagefile;
-        this.highlightedImageFile = highlightedImageFile;
+        normalIcon = new ImageIcon(imagefile);
+        highlightedIcon = new ImageIcon(highlightedImageFile);
     }
 
     public int getBoardX(){ return boardX; }
 
+    public void setBoardX(int val){boardX = val;}
+
     public int getBoardY(){ return boardY; }
 
-    public boolean isHighlighted(){ return highlighted; }
+    public void setBoardY(int val){boardY = val;}
+
+    public boolean getHighlighted(){ return highlighted; }
+
+    public void setHighlighted(boolean val) {highlighted = val;}
 
     public ImageIcon getNormalIcon(){ return normalIcon; }
 
